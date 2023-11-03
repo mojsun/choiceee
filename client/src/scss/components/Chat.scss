@@ -1,0 +1,31 @@
+.chat {
+  z-index: 5;
+  &-button {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    display: block;
+  }
+
+  &-window {
+    z-index: 5;
+    // display: none;
+    /* Add styling for the chat window here */
+    position: fixed;
+    bottom: 9rem;
+    right: 3rem;
+    background-color: #fff;
+  }
+  &-history {
+    height: 20rem;
+    width: 20rem;
+  }
+  &-input-form {
+    input {
+      width: 15rem;
+    }
+    button {
+      width: 5rem;
+    }
+  }
+}

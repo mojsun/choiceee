@@ -1,0 +1,40 @@
+.ProductDetails {
+  min-height: 100vh;
+  flex: 1;
+
+  &-Main {
+    min-height: 100vh;
+
+    &-Left {
+      // &-image-woman {
+      //   mix-blend-mode: multiply;
+      //   transform: scale(0.7);
+      //   position: relative;
+      //   top: -1rem;
+      //   left: -8rem;
+      //   border: none;
+      // }
+      // &-image-man {
+      //   mix-blend-mode: multiply;
+      //   transform: scale(0.7);
+      //   position: relative;
+      //   top: -1rem;
+      //   left: -6rem;
+      //   border: none;
+      // }
+    }
+    &-Right {
+      opacity: 0.9;
+      z-index: -1;
+      .card {
+        background-color: #d1d1d1;
+        width: 16rem;
+        height: 28rem;
+        &-imge {
+          width: 14rem;
+          height: 18rem;
+        }
+      }
+    }
+  }
+}

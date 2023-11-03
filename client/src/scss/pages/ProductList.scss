@@ -1,0 +1,109 @@
+.ProductList {
+  &-header {
+    height: 50vh;
+    max-width: 100vw;
+    position: relative;
+    &-text {
+      &-1 {
+        position: absolute;
+        top: 25%;
+        left: 9%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1;
+        font-size: large;
+        font-weight: 700;
+      }
+      &-2 {
+        position: absolute;
+        top: 35%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1;
+        font-size: large;
+        font-weight: 700;
+      }
+      &-3 {
+        position: absolute;
+        top: 45%;
+        left: 11%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1;
+        font-size: large;
+        font-weight: 900;
+        animation: fadeIn 2s ease-out forwards infinite alternate;
+      }
+    }
+    &_Video {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &-main {
+    h1 {
+      transition: text-shadow 0.3s ease-in-out; /* Add a transition for smoother effect */
+
+      /* Initial text-shadow (no shadow) */
+      text-shadow: none;
+
+      /* Add shadow when hovering */
+      &:hover {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust the shadow values as needed */
+      }
+    }
+  }
+  &-details {
+    &-detail {
+      opacity: 0;
+      transform: translateX(-100%);
+      &-1 {
+        animation: leftToRight 3s forwards;
+      }
+      &-2 {
+        animation: rightToLeft 3s forwards;
+      }
+    }
+    &-picture {
+      &-1 {
+        animation: leftToRight 3s forwards;
+      }
+      &-2 {
+        animation: rightToLeft 3s forwards;
+      }
+    }
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+////////////////////////////////////////////
+
+@keyframes leftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes rightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

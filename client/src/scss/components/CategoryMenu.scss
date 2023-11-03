@@ -1,0 +1,13 @@
+.CategoryMenu-container {
+  &-button {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    margin-right: 5rem;
+    font-size: large;
+    &:hover {
+      background-color: #9ea5a2;
+      opacity: 0.85;
+    }
+  }
+}

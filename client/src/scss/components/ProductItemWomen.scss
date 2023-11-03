@@ -1,0 +1,33 @@
+.ProductItem-container {
+  &-button {
+    border-radius: 10%;
+    border: none;
+    width: 7rem;
+    height: 2.5rem;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+    font-size: medium;
+    margin: 0.5rem;
+    animation: MoveInBottom 0.5s ease-out 0.3s;
+    animation-fill-mode: backwards;
+    &:hover {
+      background-color: #f1b24b;
+      opacity: 0.85;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      &::after {
+        transform: scalex(1.4) scaleY(1.6);
+        opacity: 0;
+      }
+    }
+  }
+}
+@keyframes MoveInBottom {
+  0% {
+    opacity: 0;
+    transform: translatey(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
