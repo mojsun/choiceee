@@ -23,6 +23,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "font-awesome": "^4.7.0",
     "intersection-observer": "^0.12.2",
+    "mongodb": "^6.3.0",
     "yarn": "^1.22.19"
   }
 }
